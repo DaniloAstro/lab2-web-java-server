@@ -1,0 +1,95 @@
+
+
+
+
+###
+GET http://localhost:8080/users
+
+
+###
+GET http://localhost:8080/users/3
+
+
+###
+PUT http://localhost:8080/users/3
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Jackie Wells",
+  "email": "JackieWells@gmail.com",
+  "age": 30,
+  "dateOfBirth":"2046-2077",
+  "country": "Night City",
+  "address": "Heywood",
+  "friends": ["Heywood", "Guadalupe Alejandra Welles"],
+  "groups": ["Valentinos"]
+}
+
+###
+DELETE http://localhost:8080/users/1
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Jackie Wells",
+  "email": "JackieWells@gmail.com",
+  "age": 30,
+  "dateOfBirth":"2046-2077",
+  "country": "Night City",
+  "address": "Heywood",
+  "friends": ["Heywood", "Guadalupe Alejandra Welles"],
+  "groups": ["Valentinos"]
+}
+
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Adam Smasher",
+  "email": "smasher@gmail.com",
+  "age": 0,
+  "country": "New York City, USA",
+  "groups": ["Arasaka Tower"],
+  "address": "Night City",
+  "dateOfBirth": "New York City",
+  "friends": ["Cyberware", "Augmentations"]
+}
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Johnny Silverhand",
+  "email": "silverhand@gmail.com",
+  "age": 34,
+  "country": "College Station, Texas",
+  "groups": ["Samurai"],
+  "address": "Night City",
+  "dateOfBirth": "November 16, 1988",
+  "friends": ["Rockerboys", "Samurai"]
+}
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Judy Alvarez ",
+  "email": "JudyAlvarez@gmail.com",
+  "age": 25,
+  "country":"Laguna Bend, Badlands",
+  "groups": ["The Mox"],
+  "address": "Watson, Night City",
+  "dateOfBirth": "Early 2050s",
+  "friends": ["The Mox", "Moxese"]
+}
+
